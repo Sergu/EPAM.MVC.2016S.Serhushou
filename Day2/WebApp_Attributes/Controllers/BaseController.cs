@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace WebApp_ControllerFactory.Controllers
+namespace WebApp_Attributes.Controllers
 {
     public class BaseController : Controller
     {

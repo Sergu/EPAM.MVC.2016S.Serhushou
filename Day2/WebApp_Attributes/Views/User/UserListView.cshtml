@@ -1,0 +1,26 @@
+﻿@model IEnumerable<WebApp_Attributes.Models.UserView>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>UserListView</title>
+</head>
+<body>
+    <h1>Users</h1>
+    <div>
+        @foreach (var user in Model)
+        {
+            <div>Name : @user.Name</div>
+            <div>Surname : @user.Surname</div>
+            <div>Age : @user.Age</div>
+            <br />
+        }
+    </div>
+</body>
+</html>

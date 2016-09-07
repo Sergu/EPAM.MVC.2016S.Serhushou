@@ -9,12 +9,12 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{AB29E594-3920-4953-AA85-C1975B5BED54}</ProjectGuid>
+    <ProjectGuid>{0CE41FDC-9CCE-4984-8B43-AF556F93AEF9}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>WebApp_ControllerFactory</RootNamespace>
-    <AssemblyName>WebApp_ControllerFactory</AssemblyName>
+    <RootNamespace>WebApp_Attributes</RootNamespace>
+    <AssemblyName>WebApp_Attributes</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
@@ -131,7 +131,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Infrastructure\CustomControllerFactory.cs" />
+    <Compile Include="Infrastructure\LocalAttribute.cs" />
     <Compile Include="Infrastructure\UserStorage.cs" />
     <Compile Include="Models\RemoveResult.cs" />
     <Compile Include="Models\UserView.cs" />
@@ -143,11 +143,11 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Views\User\UserListView.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
-    <Content Include="Views\User\UserCreateView.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Admin\RemoveUserView.cshtml" />
+    <Content Include="Views\User\UserCreateView.cshtml" />
+    <Content Include="Views\User\UserListView.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -172,9 +172,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>2089</DevelopmentServerPort>
+          <DevelopmentServerPort>3117</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:2089/</IISUrl>
+          <IISUrl>http://localhost:3117/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
