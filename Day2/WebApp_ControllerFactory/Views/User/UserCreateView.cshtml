@@ -1,0 +1,45 @@
+﻿@model WebApp_ControllerFactory.Models.UserView
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>UserCreateView</title>
+</head>
+<body>
+    <h1>Create User</h1>
+    <div> 
+        @using (Html.BeginForm())
+        {
+            <fieldset>
+                <div>
+                    @Html.LabelFor(model => model.Name,new { style = "width:200px"})
+                </div>
+                <div>
+                    @Html.TextBoxFor(model => model.Name, new { style = "width:200px" })
+                </div>
+                <br />
+                <div>
+                    @Html.LabelFor(model => model.Surname, new { style = "width:200px" })
+                </div>
+                <div>
+                    @Html.TextBoxFor(model => model.Surname, new { style = "width:200px" })
+                </div>
+                <br />
+                <div>
+                    @Html.LabelFor(model => model.Age, new { style = "width:200px" })
+                </div>
+                <div>
+                    @Html.TextBoxFor(model => model.Age, new { style = "width:200px" })
+                </div>
+                <input type="submit" value="Create"/>
+            </fieldset>
+        }
+    </div>
+</body>
+</html>

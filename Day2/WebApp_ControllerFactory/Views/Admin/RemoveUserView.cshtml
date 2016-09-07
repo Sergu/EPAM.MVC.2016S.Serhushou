@@ -1,0 +1,20 @@
+﻿@model WebApp_ControllerFactory.Models.RemoveResult
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>RemoveUserView</title>
+</head>
+<body>
+    @{
+        string str = Model.WasDeleted == true ? "was removed" : "doesn't exist";
+    }
+    <h3>User : @Model.Surname @str</h3>
+</body>
+</html>
