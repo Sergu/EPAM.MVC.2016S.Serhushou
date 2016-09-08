@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <script type="text/javascript" src="~/scripts/jquery-3.1.0.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="~/scripts/site.css">
+</head>
+<body>
+    <div class="container">
+        @{ 
+            if (IsSectionDefined("NavBar"))
+            {
+                @RenderSection("NavBar");
+            }
+        }
+        @RenderBody()
+        @{
+            if (IsSectionDefined("Footer"))
+            {
+                @RenderSection("Footer");
+            }
+        }
+    </div>
+</body> 
+</html>
